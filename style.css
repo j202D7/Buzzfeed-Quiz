@@ -1,0 +1,106 @@
+body {
+  background: linear-gradient(#5b7cac, #e2c8f5, #f7e9ff);
+  font-family: "Comic Relief, sans-serif;
+}
+
+.container {
+  max-width: 420px;
+  margin: 60px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.hero-img {
+   width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height : auto;
+}
+
+h1 {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+  font-size: 2vw;
+  font-family: "Comic Relief", cursive, sans-serif;
+}
+
+.result-text {
+  display: none;
+}
+
+.result-img {
+  display: none;
+  width: 100%;
+}
+
+h2 {
+  display: none;
+}
+p {
+   font-size: clamp(0.9rem, 3vw, 1.05rem);
+  font-size: 1vw;
+   margin-bottom: 15px;
+  color: #444;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+/* Button */
+button {
+  margin-top: 10px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  background: #7b3fe4;
+  color: white;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #6330c9;
+  transform: scale(1.05);
+}
+
+.result-text {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+  display: none;
+}
+
+/* Result image */
+.result-img {
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 10px;
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 20px 10px;
+    padding: 18px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 481px) and (max-width: 900px) {
+  .container {
+    max-width: 500px;
+  }
+}
